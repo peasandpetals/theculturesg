@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Last-Modified":"Last-Modified: Sat, 22 Apr 2017 02:28:41 GMT"},"uri":"theculture.sg\/?s=AQ&submit=Search","blog_id":1,"post":0,"key":"theculture.sg443\/?s=AQ&submit=Searchgzip"}

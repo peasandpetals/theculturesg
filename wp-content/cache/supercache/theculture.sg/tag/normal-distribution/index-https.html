@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://theculture.sg/xmlrpc.php">
+
+<title>Normal Distribution &#8211; The Culture SG</title>
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="rF7IGGK-Z1kUWkI9RDGPOSVV1Z4pwQ1fvnqNZawnCKY" />
+<meta name="msvalidate.01" content="53BF274C303012D840C799B7A54034AD" />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Culture SG &raquo; Feed" href="https://theculture.sg/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Culture SG &raquo; Comments Feed" href="https://theculture.sg/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Culture SG &raquo; Normal Distribution Tag Feed" href="https://theculture.sg/tag/normal-distribution/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/theculture.sg\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://theculture.sg/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel-ie8fix.css?ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mediaelement-css'  href='https://theculture.sg/wp-includes/js/mediaelement/mediaelementplayer.min.css?ver=2.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://theculture.sg/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-bxslider-css'  href='https://theculture.sg/wp-content/themes/hashone/css/jquery.bxslider.css?ver=4.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://theculture.sg/wp-content/themes/hashone/css/animate.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://theculture.sg/wp-content/themes/hashone/css/font-awesome.css?ver=4.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='https://theculture.sg/wp-content/themes/hashone/css/owl.carousel.css?ver=1.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-css'  href='https://theculture.sg/wp-content/themes/hashone/css/owl.theme.css?ver=1.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='nivo-lightbox-css'  href='https://theculture.sg/wp-content/themes/hashone/css/nivo-lightbox.css?ver=1.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='hashone-style-css'  href='https://theculture.sg/wp-content/themes/hashone/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='hashone-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Roboto+Condensed:300italic,400italic,700italic,400,300,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://theculture.sg/wp-content/plugins/jetpack/css/jetpack.css?ver=4.8.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/_inc/spin.js?ver=1.3'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/_inc/jquery.spin.js?ver=1.3'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery/tiled-gallery.js?ver=4.7.3'></script>
+<link rel='https://api.w.org/' href='https://theculture.sg/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://theculture.sg/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://theculture.sg/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.3" />
+
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//s1.wp.com'>
+<link rel='dns-prefetch' href='//s2.wp.com'>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style><style>.hs-main-header,#hs-home-slider-section{background-image: url(https://theculture.sg/wp-content/uploads/2017/02/9syokyrq-re-jeff-sheldon-1.jpg)}.hs-service-left-bg{ background-image:url(https://theculture.sg/wp-content/uploads/2017/02/yhg6llfljs0-lacie-slezak.jpg);}#hs-counter-section{ background-image:url(https://theculture.sg/wp-content/uploads/2017/02/kxxpdn1cueg-igor-ovsyannykov.jpg);}#hs-contact-section{ background-image:url(https://theculture.sg/wp-content/uploads/2017/02/npxxwgq33zq-glenn-carstens-peters.jpg);}</style>
+<!-- BEGIN GADWP v4.9.6.2 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script type="text/javascript">
+(function($){
+    $(window).load(function() {
+        
+            //Track Downloads
+            $('a').filter(function() {
+                return this.href.match(/.*\.(zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*)(\?.*)?$/);
+            }).click(function(e) {
+                ga('send','event', 'download', 'click', this.href);
+            });
+
+            //Track Mailto
+            $('a[href^="mailto"]').click(function(e) {
+                ga('send','event', 'email', 'send', this.href);
+             });
+            
+            //Track Outbound Links
+            $('a[href^="http"]').filter(function() {
+                if (!this.href.match(/.*\.(zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*)(\?.*)?$/)){
+                    if (this.href.indexOf('theculture.sg') == -1) return this.href;
+                }
+            }).click(function(e) {
+                ga('send','event', 'outbound', 'click', this.href);
+            });
+		    		        
+            //Track Affiliates
+            $('a').filter(function() {
+            	if ('/out/'!=''){
+        	       	return this.href.match(/(\/out\/)/);
+            	}
+            }).click(function(event) {
+               		ga('send','event', 'affiliates', 'click', this.href);
+            });
+                
+            //Track Hashmarks
+            $('a').filter(function() {
+                if (this.href.indexOf('theculture.sg') != -1 || this.href.indexOf('://') == -1) return this.hash;
+            }).click(function(e) {
+                ga('send','event', 'hashmark', 'click', this.href);
+            });
+
+        });
+})(jQuery);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-64909429-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+			<style type="text/css" id="wp-custom-css">
+				/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+/*
+this is to disable the click for struggling section
+*/
+
+.hs-service-excerpt h6 a {
+    pointer-events: none;
+}			</style>
+		</head>
+
+<body class="archive tag tag-normal-distribution tag-144 group-blog">
+<div id="hs-page">
+		<header id="hs-masthead" class="hs-site-header hs-clearfix hs-black">
+		<div class="hs-container">
+			<div id="hs-site-branding">
+									<p class="hs-site-title"><a href="https://theculture.sg/" rel="home">The Culture SG</a></p>
+										
+					<p class="hs-site-description">Cultivating Champions, Moulding Success</p>
+					
+							</div><!-- .site-branding -->
+
+			<nav id="hs-site-navigation" class="hs-main-navigation">
+				<div class="hs-toggle-menu"><span></span></div>
+				<div class="hs-menu"><ul id="menu-main" class="hs-clearfix"><li id="menu-item-4945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4945"><a href="https://theculture.sg/about-us/">About Us</a></li>
+<li id="menu-item-4951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4951"><a href="https://theculture.sg/our-team/">Our Team</a>
+<ul class="sub-menu">
+	<li id="menu-item-4956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4956"><a href="https://theculture.sg/our-team/tutor-ks/">Tutor KS</a></li>
+	<li id="menu-item-4957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4957"><a href="https://theculture.sg/our-team/tutor-christine/">Tutor Christine</a></li>
+	<li id="menu-item-4958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4958"><a href="https://theculture.sg/our-team/tutor-casey/">Tutor Casey</a></li>
+	<li id="menu-item-4959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4959"><a href="https://theculture.sg/our-team/tutor-eric/">Tutor Eric</a></li>
+</ul>
+</li>
+<li id="menu-item-4961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4961"><a href="https://theculture.sg/schedules/">Schedules</a>
+<ul class="sub-menu">
+	<li id="menu-item-4963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4963"><a href="https://theculture.sg/schedules/math-class-schedule/">Math Class Schedule</a></li>
+	<li id="menu-item-4964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4964"><a href="https://theculture.sg/schedules/gp-class-schedule/">GP Class Schedule</a></li>
+	<li id="menu-item-5036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5036"><a href="https://theculture.sg/schedules/physics-class-schedule/">Physics Class Schedule</a></li>
+	<li id="menu-item-4962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4962"><a href="https://theculture.sg/schedules/crash-course-schedule/">Crash Course Schedule</a></li>
+</ul>
+</li>
+<li id="menu-item-5081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5081"><a href="https://theculture.sg/testimonials/testimonials-for-ks-math/">Testimonials</a>
+<ul class="sub-menu">
+	<li id="menu-item-4992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4992"><a href="https://theculture.sg/testimonials/testimonials-for-ks-math/">Testimonials for KS</a></li>
+	<li id="menu-item-4993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4993"><a href="https://theculture.sg/testimonials/testimonials-for-christine-gp/">Testimonials for Christine</a></li>
+	<li id="menu-item-4994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994"><a href="https://theculture.sg/testimonials/testimonials-for-casey-physics/">Testimonials for Casey</a></li>
+</ul>
+</li>
+<li id="menu-item-5005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5005"><a href="https://theculture.sg/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-5009" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5009"><a href="https://theculture.sg/2015/07/a-level-h2-mathematics-9740-suggested-solutions/">H2 Mathematics Suggested Solutions (2010 &#8211; 2016)</a></li>
+	<li id="menu-item-5007" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5007"><a href="https://theculture.sg/2016/05/list-of-great-math-articles/">List of Great and Helpful Math Articles</a></li>
+	<li id="menu-item-5008" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5008"><a href="https://theculture.sg/2016/04/list-of-great-gp-articles/">List of Great and Helpful GP Articles</a></li>
+</ul>
+</li>
+</ul></div>			</nav><!-- #hs-site-navigation -->
+		</div>
+	</header><!-- #hs-masthead -->
+
+	<div id="hs-content" class="hs-site-content hs-clearfix">
+<header class="hs-main-header">
+	<div class="hs-container">
+		<h1 class="hs-main-title">Tag: Normal Distribution</h1>		<div class="hs-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://theculture.sg/" itemprop="url"><span itemprop="title">Home</span></a></span> <span class="sep">&rsaquo;</span> <span class="current">Normal Distribution</span></div><!-- .hs-breadcrumbs -->	</div>
+</header><!-- .hs-main-header -->
+
+<div class="hs-container">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+						
+				
+<article id="post-3284" class="post-3284 post type-post status-publish format-standard hentry category-jc-mathematics tag-373 tag-a-level tag-h2-mathematics tag-mf15 tag-normal-approximation tag-normal-distribution tag-paper-2 tag-statistics tag-suggested-solution tag-year-2015">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Mar</span><span class="hs-day">28</span><span class="hs-year">2016</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2016/03/2015-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions/#respond">No <span>Comments</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2016/03/2015-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions/" rel="bookmark">2015 A-level H2 Mathematics (9740) Paper 2 Question 12 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Let X and Y denote the mass of a apple and pear in grams respectively.<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%28X_1+%2B+%5Cldots+X_5%29+%3D+5%28300%29+%3D+1500&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}(X_1 + &#92;ldots X_5) = 5(300) = 1500" title="&#92;mathbb{E}(X_1 + &#92;ldots X_5) = 5(300) = 1500" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BVar%7D%28X_1+%2B+%5Cldots+X_5%29+%3D+5%2820%5E2%29+%3D+2000&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{Var}(X_1 + &#92;ldots X_5) = 5(20^2) = 2000" title="&#92;mathrm{Var}(X_1 + &#92;ldots X_5) = 5(20^2) = 2000" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=X_1+%2B+%5Cldots+X_5+%5Csim+%5Cmathrm%7BN%7D%281500%2C+2000%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_1 + &#92;ldots X_5 &#92;sim &#92;mathrm{N}(1500, 2000)" title="X_1 + &#92;ldots X_5 &#92;sim &#92;mathrm{N}(1500, 2000)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X_1+%2B+%5Cldots+X_5+%3E+1600%29+%5Capprox+0.0127&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X_1 + &#92;ldots X_5 &gt; 1600) &#92;approx 0.0127" title="&#92;mathrm{P}(X_1 + &#92;ldots X_5 &gt; 1600) &#92;approx 0.0127" class="latex" /> (3 SF)</p>
+<p>(ii)<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%5BX_1+%2B+%5Cldots+X_5+-+%28Y_1+%2B+%5Cldots+Y_8%29%5D+%3D+5%28300%29+-+8%28200%29+%3D+-100+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}[X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8)] = 5(300) - 8(200) = -100 " title="&#92;mathbb{E}[X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8)] = 5(300) - 8(200) = -100 " class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BVar%7D%5BX_1+%2B+%5Cldots+X_5+-+%28Y_1+%2B+%5Cldots+Y_8%29%5D+%3D+5%2820%5E2%29+%2B+8%2815%5E2%29+%3D+3800+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{Var}[X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8)] = 5(20^2) + 8(15^2) = 3800 " title="&#92;mathrm{Var}[X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8)] = 5(20^2) + 8(15^2) = 3800 " class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=X_1+%2B+%5Cldots+X_5+-+%28Y_1+%2B+%5Cldots+Y_8%29+%5Csim+%5Cmathrm%7BN%7D%28-100%2C+3800%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8) &#92;sim &#92;mathrm{N}(-100, 3800)" title="X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8) &#92;sim &#92;mathrm{N}(-100, 3800)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X_1+%2B+%5Cldots+X_5+-+%28Y_1+%2B+%5Cldots+Y_8%29+%3E+0%29+%5Capprox+0.0524&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8) &gt; 0) &#92;approx 0.0524" title="&#92;mathrm{P}(X_1 + &#92;ldots X_5 - (Y_1 + &#92;ldots Y_8) &gt; 0) &#92;approx 0.0524" class="latex" /> (3 SF)</p>
+<p>(iii)<br />
+Let A and B denote the mass of a peeled apple and peeled pear in grams respectively.<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%28A%29%3D+%5Cmathbb%7BE%7D%280.85X%29+%3D+0.85%28300%29%3D255&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}(A)= &#92;mathbb{E}(0.85X) = 0.85(300)=255" title="&#92;mathbb{E}(A)= &#92;mathbb{E}(0.85X) = 0.85(300)=255" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%28B%29%3D+%5Cmathbb%7BE%7D%280.90Y%29+%3D+0.90%28200%29%3D180&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}(B)= &#92;mathbb{E}(0.90Y) = 0.90(200)=180" title="&#92;mathbb{E}(B)= &#92;mathbb{E}(0.90Y) = 0.90(200)=180" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BVar%7D%28A%29+%3D+%5Cmathrm%7BVar%7D%280.85X%29+%3D+0.85%5E2%2820%5E2%29+%3D+289&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{Var}(A) = &#92;mathrm{Var}(0.85X) = 0.85^2(20^2) = 289" title="&#92;mathrm{Var}(A) = &#92;mathrm{Var}(0.85X) = 0.85^2(20^2) = 289" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BVar%7D%28B%29+%3D+%5Cmathrm%7BVar%7D%280.90Y%29+%3D+0.90%5E2%2815%5E2%29+%3D+182.25&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{Var}(B) = &#92;mathrm{Var}(0.90Y) = 0.90^2(15^2) = 182.25" title="&#92;mathrm{Var}(B) = &#92;mathrm{Var}(0.90Y) = 0.90^2(15^2) = 182.25" class="latex" /> </p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%5BA_1+%2B+%5Cldots+A_5+%2B+B_1+%2B+%5Cldots+B_8%29%5D+%3D+5%28255%29+%2B+8%28180%29+%3D+2715&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}[A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8)] = 5(255) + 8(180) = 2715" title="&#92;mathbb{E}[A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8)] = 5(255) + 8(180) = 2715" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BVar%7D%5BA_1+%2B+%5Cldots+A_5+%2B+B_1+%2B+%5Cldots+B_8%29%5D+%3D+5%28289%29+%2B+8%28182.25%29+%3D+2903&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{Var}[A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8)] = 5(289) + 8(182.25) = 2903" title="&#92;mathrm{Var}[A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8)] = 5(289) + 8(182.25) = 2903" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=A_1+%2B+%5Cldots+A_5+%2B+B_1+%2B+%5Cldots+B_8+%5Csim+%5Cmathrm%7BN%7D%282715%2C+2903%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8 &#92;sim &#92;mathrm{N}(2715, 2903)" title="A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8 &#92;sim &#92;mathrm{N}(2715, 2903)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28A_1+%2B+%5Cldots+A_5+%2B+B_1+%2B+%5Cldots+B_8+%7E+%5Ctextless+%7E+2750%29+%5Capprox+0.742&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8 ~ &#92;textless ~ 2750) &#92;approx 0.742" title="&#92;mathrm{P}(A_1 + &#92;ldots A_5 + B_1 + &#92;ldots B_8 ~ &#92;textless ~ 2750) &#92;approx 0.742" class="latex" /> (3 SF)</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-3276" class="post-3276 post type-post status-publish format-standard hentry category-jc-mathematics tag-373 tag-a-level tag-h2-mathematics tag-hypothesis-testing tag-mf15 tag-normal-distribution tag-paper-2 tag-sampling-theory tag-statistics tag-suggested-solution tag-t-test tag-year-2015">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Mar</span><span class="hs-day">28</span><span class="hs-year">2016</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2016/03/2015-a-level-h2-mathematics-9740-paper-2-question-8-suggested-solutions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2016/03/2015-a-level-h2-mathematics-9740-paper-2-question-8-suggested-solutions/" rel="bookmark">2015 A-level H2 Mathematics (9740) Paper 2 Question 8 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>Let X denote the mass of pineapple tarts and <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> denote the population mean mass of pineapple tarts.</p>
+<p><img src="//s0.wp.com/latex.php?latex=H_0%3A+%5Cmu+%3D+0.9&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0: &#92;mu = 0.9" title="H_0: &#92;mu = 0.9" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=H_1%3A+%5Cmu+%7E+%5Ctextless+%7E+0.9&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_1: &#92;mu ~ &#92;textless ~ 0.9" title="H_1: &#92;mu ~ &#92;textless ~ 0.9" class="latex" /></p>
+<p>Unbiased estimate of population mean = 0.8825</p>
+<p><img src="//s0.wp.com/latex.php?latex=s%5E2+%3D+0.0747854073%5E2+%5Capprox+0.00559&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s^2 = 0.0747854073^2 &#92;approx 0.00559" title="s^2 = 0.0747854073^2 &#92;approx 0.00559" class="latex" /> (3 SF)</p>
+<p>Under <img src="//s0.wp.com/latex.php?latex=H_0%2C+%5Cbar%7BX%7D+%5Csim+%5Cmathrm%7BN%7D+%28%5Cmu%2C+%5Cfrac%7Bs%5E2%7D%7Bn%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0, &#92;bar{X} &#92;sim &#92;mathrm{N} (&#92;mu, &#92;frac{s^2}{n})" title="H_0, &#92;bar{X} &#92;sim &#92;mathrm{N} (&#92;mu, &#92;frac{s^2}{n})" class="latex" /></p>
+<p>Test Statistic, <img src="//s0.wp.com/latex.php?latex=T+%3D+%5Cfrac%7B%5Cbar%7BX%7D-+%5Cmu%7D%7B%5Cfrac%7Bs%7D%7B%5Csqrt%7Bn%7D%7D%7D+%5Csim+t%287%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="T = &#92;frac{&#92;bar{X}- &#92;mu}{&#92;frac{s}{&#92;sqrt{n}}} &#92;sim t(7)" title="T = &#92;frac{&#92;bar{X}- &#92;mu}{&#92;frac{s}{&#92;sqrt{n}}} &#92;sim t(7)" class="latex" /> at 10% level of significance.</p>
+<p>Using GC, p-value <img src="//s0.wp.com/latex.php?latex=%3D+0.264619+%3E+0.1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 0.264619 &gt; 0.1" title="= 0.264619 &gt; 0.1" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow" title="&#92;Rightarrow" class="latex" />, do not reject <img src="//s0.wp.com/latex.php?latex=H_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0" title="H_0" class="latex" /></p>
+<p>There is insufficient evidence at 10% significance level to reject the stall owner&#8217;s claim.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-2175" class="post-2175 post type-post status-publish format-standard has-post-thumbnail hentry category-jc-chemistry category-general-paper category-jc-mathematics category-jc-physics category-university-mathematics tag-a-level tag-bell-curve tag-how-to tag-junior-college tag-normal-distribution tag-statistics tag-year-2015">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Nov</span><span class="hs-day">6</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/11/a-little-on-bell-curve/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+				<figure class="entry-figure">
+						<a href="https://theculture.sg/2015/11/a-little-on-bell-curve/"><img src="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/11/Screen-Shot-2015-11-05-at-10.06.00-PM.png?resize=700%2C340&#038;ssl=1" alt="A little on bell curve"></a>
+		</figure>
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/11/a-little-on-bell-curve/" rel="bookmark">A little on bell curve</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/chemistry/jc-chemistry/" rel="category tag">JC Chemistry</a>, <a href="https://theculture.sg/category/general-paper/" rel="category tag">JC General Paper</a>, <a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>, <a href="https://theculture.sg/category/jc-physics/" rel="category tag">JC Physics</a>, <a href="https://theculture.sg/category/mathematics/university-mathematics/" rel="category tag">University Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>Since many students were asking, I thought I&#8217;ll roughly explain the bell curve and its distribution properties.</p>
+<p>Before that, I thought I should mention that I&#8217;m not really sure myself if Private Candidates and School Candidates share a different bell curve. I doubt so, since all take the same subject code, there should be no differentiation as there will be bias. And I do not really see a particular need for them if all the students take the same paper. There is no differentiation between taking the paper again and first time too, it doesn&#8217;t mean that you take it twice, you have a higher chance/ lower chance. They should be competing in all fairness still.</p>
+<p>A bit of intuition of how this bell curve thing works. We can&#8217;t have too many A&#8217;s. If ALL the JC students were to score zero mark and no student deviate (cheat), then all of you will get A. Similarly, if God answered all your prayers and ALL JC student were to score full marks, then all will get A. The curve attempts to distribute proportionally the results of everybody based on the marks, and place you in the correct percentile (probability).</p>
+<p><a href="http://homepage.stat.uiowa.edu/~mbognar/applets/normal.html">Normal Distribution Generator</a></p>
+<p>Logistics wise, you can click the link above which gives us a normal distribution. Here, you can input the Mean and Variance so you can create your own bell curve. I can&#8217;t really advise the mean and variance score since I have no data. Its really why we only see letter grade.</p>
+<p>Next we look at the bell curve</p>
+<figure id="attachment_2176" style="width: 660px" class="wp-caption alignnone"><img data-attachment-id="2176" data-permalink="https://theculture.sg/2015/11/a-little-on-bell-curve/normal-distrubution-large/" data-orig-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?fit=1280%2C652&amp;ssl=1" data-orig-size="1280,652" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Bell Curve" data-image-description="" data-medium-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?fit=300%2C153&amp;ssl=1" data-large-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?fit=640%2C326&amp;ssl=1" class="wp-image-2176 size-large" src="https://i1.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large-1024x522.gif?resize=640%2C326" alt="Credits: Google" srcset="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?resize=1024%2C522&amp;ssl=1 1024w, https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?resize=300%2C153&amp;ssl=1 300w, https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/normal-distrubution-large.gif?w=1280&amp;ssl=1 1280w" sizes="(max-width: 640px) 100vw, 640px" data-recalc-dims="1" /><figcaption class="wp-caption-text">Credits: Google</figcaption></figure>
+<p>First of all, this is a standardised normal, the <img src="//s0.wp.com/latex.php?latex=Z+%5Csim+%5Cmathrm%7BN%7D%280%2C1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Z &#92;sim &#92;mathrm{N}(0,1)" title="Z &#92;sim &#92;mathrm{N}(0,1)" class="latex" /> curve that you all know. To simplify things, just consider the cumulative percent at the bottom. 80% means you 80th percentile, and that in general warrants an A I&#8217;ll say. So consider we have 20 or 21 JC (I don&#8217;t know), each having approximately 700 students taking, we can find the population size. From here we can then take a percentage and figure out how many A&#8217;s are available.</p>
+<p>Next, what does it mean when the bell curve shifts?</p>
+<p>What we see above is a Normal curve centred about 0 (mark), and we know that Normal curve is centred about <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> (mean/ modal mark). So if you can figure out the mean mark, by taking a sufficient sample size of students and how they did (we lack the information here since we only receive letter grades), we can that find the unbiased estimate of the population mean. And then the unbiased estimate of the population variance, which is crucial too.</p>
+<p>Now since we all squeeze into the same bell curve and due to some friends scoring full marks or near full marks, yes there are definitely students that have full marks in a few particular JCs, I know a handful of my students above 90 actually&#8230; This results in the mean mark shifting to the right. And in general, the curve should not shift left, at least not in our society. We are Asians.</p>
+<p>Here is why, it is really impossible to say what&#8217;s the range for A unless you can confidently tell me the population mean and variance. But I do consider the case of 25% of students should get an A.</p>
+<p>I hope this clarifies a bit. And yes, this is what you guys actually learnt in A-levels, if you understood your content of course as what I&#8217;ve explained in class before. To spice things up, we can also perform hypothesis testing (simple case can be just with <img src="//s0.wp.com/latex.php?latex=%5Calpha&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;alpha" title="&#92;alpha" class="latex" />, while we should also look at <img src="//s0.wp.com/latex.php?latex=%5Cbeta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;beta" title="&#92;beta" class="latex" /> )to see if the <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> we found is the best unbiased estimate. And something out of syllabus will be to test if <img src="//s0.wp.com/latex.php?latex=%5Csigma%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sigma^2" title="&#92;sigma^2" class="latex" /> is also best unbiased estimate. The word Best adds one more criterion for our estimate actually.</p>
+<p>Now you can go at play with the above link and fit in what you believe the mean and standard deviation is, and then you can calculate the percentile (probability) you are in by putting the score you think you have.</p>
+<p>Take note the standard deviation should be not go too big, as we can&#8217;t have people scoring more than 100. 100 marks should be <img src="//s0.wp.com/latex.php?latex=3.1+%5Csigma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3.1 &#92;sigma" title="3.1 &#92;sigma" class="latex" /> away from <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" />.</p>
+<p>Again, please don&#8217;t ask me whats the <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=%5Csigma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sigma" title="&#92;sigma" class="latex" />. I don&#8217;t want to advise such things. You can open your sampling notes, perform stratified sampling then collect unbiased estimates of population mean and variance yourself, and put what you learnt to real (finally) use.</p>
+<p>If you&#8217;re lazy, then just check what&#8217;s your school percentage of A then consider the population of your school, that roughly how well you will do. 🙂 I usually say this in class, that if your school delivers 50%, then you need to find a friend to not do well at least.</p>
+<p>My take for the bell curve is that the bell curve will always help the best students. As for it helping the weaker students, it is highly dependent on the cohort on the whole and the difficulty of the paper. Consider me scoring 90/100 marks and everybody else scores above 95 marks, I&#8217;ll be the weakest and will end up failing. I hope these does not discourage or crush the confidence. Remember that there is a paper 2 still, with equal weightage.</p>
+<p><figure id="attachment_2194" style="width: 300px" class="wp-caption alignnone"><a href="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg"><img data-attachment-id="2194" data-permalink="https://theculture.sg/2015/11/a-little-on-bell-curve/skewed/" data-orig-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?fit=1280%2C1016&amp;ssl=1" data-orig-size="1280,1016" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Skewed Normal Distribution" data-image-description="" data-medium-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?fit=300%2C238&amp;ssl=1" data-large-file="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?fit=640%2C508&amp;ssl=1" src="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed-300x238.jpeg?resize=300%2C238" alt="Credits: Google" class="size-medium wp-image-2194" srcset="https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?resize=300%2C238&amp;ssl=1 300w, https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?resize=1024%2C813&amp;ssl=1 1024w, https://i0.wp.com/theculture.sg/wp-content/uploads/2015/11/Skewed.jpeg?w=1280&amp;ssl=1 1280w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a><figcaption class="wp-caption-text">Credits: Google</figcaption></figure><br />
+So I took this image of google, it does not represent the A-levels. Please take note. But this is what happens when too many students do well. If you&#8217;re keen, you can read more on skewed normal distribution independently. I might do more on Stat 101 here when I&#8217;m free. </p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1690" class="post-1690 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-h2-mathematics tag-hypothesis-testing tag-normal-distribution tag-statistics tag-suggested-solution tag-year-2011 tag-z-test">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Oct</span><span class="hs-day">10</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-10-suggested-solutions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-10-suggested-solutions/" rel="bookmark">2011 A-level H2 Mathematics (9740) Paper 2 Question 10 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Let <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> be the population mean time taken to install an electronic component.</p>
+<p><img src="//s0.wp.com/latex.php?latex=H_0+%3A+%5Cmu+%3D+38&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0 : &#92;mu = 38" title="H_0 : &#92;mu = 38" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=H_1+%3A+%5Cmu+%5Ctextless+38&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_1 : &#92;mu &#92;textless 38" title="H_1 : &#92;mu &#92;textless 38" class="latex" /></p>
+<p>(ii)<br />
+Under <img src="//s0.wp.com/latex.php?latex=H_0%2C+%5Cbar%7BT%7D+%5Csim+%5Cmathrm%7BN%7D%2838%2C+%5Cfrac%7B25%7D%7Bn%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0, &#92;bar{T} &#92;sim &#92;mathrm{N}(38, &#92;frac{25}{n})" title="H_0, &#92;bar{T} &#92;sim &#92;mathrm{N}(38, &#92;frac{25}{n})" class="latex" /></p>
+<p>Test Statistic, <img src="//s0.wp.com/latex.php?latex=Z+%3D+%5Cfrac%7B%5Cbar%7BT%7D-38%7D%7B%5Cfrac%7B5%7D%7B%5Csqrt%7Bn%7D%7D%7D+%5Csim+N%280%2C+1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Z = &#92;frac{&#92;bar{T}-38}{&#92;frac{5}{&#92;sqrt{n}}} &#92;sim N(0, 1)" title="Z = &#92;frac{&#92;bar{T}-38}{&#92;frac{5}{&#92;sqrt{n}}} &#92;sim N(0, 1)" class="latex" /></p>
+<p>At 5% level of significance, we reject <img src="//s0.wp.com/latex.php?latex=H_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0" title="H_0" class="latex" /> if <img src="//s0.wp.com/latex.php?latex=z+%5Cle+-1.6449&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z &#92;le -1.6449" title="z &#92;le -1.6449" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow+%5Cfrac%7B%5Cbar%7Bt%7D-38%7D%7B%5Cfrac%7B5%7D%7B%5Csqrt%7Bn%7D%7D%7D++%5Cle+-1.6449&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow &#92;frac{&#92;bar{t}-38}{&#92;frac{5}{&#92;sqrt{n}}}  &#92;le -1.6449" title="&#92;Rightarrow &#92;frac{&#92;bar{t}-38}{&#92;frac{5}{&#92;sqrt{n}}}  &#92;le -1.6449" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Ctherefore%2C+%5C%7B+%5Cbar%7Bt%7D+%5Cin+%5Cmathbb%7BR%7D+%7C+0+%5Ctextless+%5Cbar%7Bt%7D+%5Cle+36.8+%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;therefore, &#92;{ &#92;bar{t} &#92;in &#92;mathbb{R} | 0 &#92;textless &#92;bar{t} &#92;le 36.8 &#92;}" title="&#92;therefore, &#92;{ &#92;bar{t} &#92;in &#92;mathbb{R} | 0 &#92;textless &#92;bar{t} &#92;le 36.8 &#92;}" class="latex" /></p>
+<p>(iii)<br />
+At 5% level of significance, we do not reject <img src="//s0.wp.com/latex.php?latex=H_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="H_0" title="H_0" class="latex" /> if <img src="//s0.wp.com/latex.php?latex=z+%3E+-1.6449&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z &gt; -1.6449" title="z &gt; -1.6449" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow+%5Cfrac%7B37.1-38%7D%7B%5Cfrac%7B5%7D%7B%5Csqrt%7Bn%7D%7D%7D+%5Ctextless+-1.6449&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow &#92;frac{37.1-38}{&#92;frac{5}{&#92;sqrt{n}}} &#92;textless -1.6449" title="&#92;Rightarrow &#92;frac{37.1-38}{&#92;frac{5}{&#92;sqrt{n}}} &#92;textless -1.6449" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=n+%5Ctextless+83.5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n &#92;textless 83.5" title="n &#92;textless 83.5" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Ctherefore%2C+%5C%7Bn+%5Cin+%5Cmathbb%7BR%7D%7C+0+%5Ctextless+n+%5Cle+83+%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;therefore, &#92;{n &#92;in &#92;mathbb{R}| 0 &#92;textless n &#92;le 83 &#92;}" title="&#92;therefore, &#92;{n &#92;in &#92;mathbb{R}| 0 &#92;textless n &#92;le 83 &#92;}" class="latex" /></p>
+<h3>KS Comments:</h3>
+<p>Some students forget to define <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" /> appropriately. (ii), a few students actually do not realised that the rejection rule is when <img src="//s0.wp.com/latex.php?latex=p+%5Cle+%5Calpha&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p &#92;le &#92;alpha" title="p &#92;le &#92;alpha" class="latex" /> instead of $latex p < \alpha$, and did not consider the correct inequality. (iii), Students overlook that n refers to sample size and sample size must be an integer. The answers are required to be given in sets here. Some students still have trouble writing sets.
+</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1694" class="post-1694 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-approximation tag-continuity-correction tag-graphing-calculator tag-h2-mathematics tag-mf15 tag-normal-distribution tag-poisson-distribution tag-statistics tag-suggested-solution tag-year-2011">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Oct</span><span class="hs-day">9</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions/#respond">No <span>Comments</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions/" rel="bookmark">2011 A-level H2 Mathematics (9740) Paper 2 Question 12 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Let X denote the number of people joining the queue in 4 minutes.</p>
+<p><img src="//s0.wp.com/latex.php?latex=X+%5Csim+%5Cmathrm%7BPo%7D%284.8%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X &#92;sim &#92;mathrm{Po}(4.8)" title="X &#92;sim &#92;mathrm{Po}(4.8)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X+%5Cge+8%29+%3D+1+-+%5Cmathrm%7BP%7D%28X+%5Cle+7%29+%5Capprox+0.113&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X &#92;ge 8) = 1 - &#92;mathrm{P}(X &#92;le 7) &#92;approx 0.113" title="&#92;mathrm{P}(X &#92;ge 8) = 1 - &#92;mathrm{P}(X &#92;le 7) &#92;approx 0.113" class="latex" /></p>
+<p>(ii)<br />
+Let Y denotes number of people joining the queue in t seconds.</p>
+<p><img src="//s0.wp.com/latex.php?latex=Y+%5Csim+%5Cmathrm%7BPo%7D%280%2C02t%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y &#92;sim &#92;mathrm{Po}(0,02t)" title="Y &#92;sim &#92;mathrm{Po}(0,02t)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28Y+%5Cle+1%29+%3D+0.7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(Y &#92;le 1) = 0.7" title="&#92;mathrm{P}(Y &#92;le 1) = 0.7" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28Y+%3D+0%29+%2B+%5Cmathrm%7BP%7D%28Y+%3D+1%29+%3D+0.7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(Y = 0) + &#92;mathrm{P}(Y = 1) = 0.7" title="&#92;mathrm{P}(Y = 0) + &#92;mathrm{P}(Y = 1) = 0.7" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Be%5E%7B-0.02t%7D%280.02t%29%5E0%7D%7B0%21%7D+%2B+%5Cfrac%7Be%5E%7B-0.02t%7D%280.02t%29%5E1%7D%7B1%21%7D%3D0.7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{e^{-0.02t}(0.02t)^0}{0!} + &#92;frac{e^{-0.02t}(0.02t)^1}{1!}=0.7" title="&#92;frac{e^{-0.02t}(0.02t)^0}{0!} + &#92;frac{e^{-0.02t}(0.02t)^1}{1!}=0.7" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=e%5E%7B-0.02t%7D%281%2B0.02t%29+%3D+0.7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-0.02t}(1+0.02t) = 0.7" title="e^{-0.02t}(1+0.02t) = 0.7" class="latex" /></p>
+<p>Using the Graphing Calculator, t = 55</p>
+<p>(iii)<br />
+Let W denote the number of people joining the queue in 15 minutes.</p>
+<p><img src="//s0.wp.com/latex.php?latex=W+%5Csim+%5Cmathrm%7BPo%7D%2818%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="W &#92;sim &#92;mathrm{Po}(18)" title="W &#92;sim &#92;mathrm{Po}(18)" class="latex" /></p>
+<p>Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+18+%3E+10%2C+%7EW+%5Csim+%5Cmathrm%7BN%7D%2818%2C+18%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 18 &gt; 10, ~W &#92;sim &#92;mathrm{N}(18, 18)" title="&#92;lambda = 18 &gt; 10, ~W &#92;sim &#92;mathrm{N}(18, 18)" class="latex" /> approximately.</p>
+<p>Let V denote the number of people leaving the queue in 15 minutes.</p>
+<p><img src="//s0.wp.com/latex.php?latex=V+%5Csim+%5Cmathrm%7BPo%7D%2827%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V &#92;sim &#92;mathrm{Po}(27)" title="V &#92;sim &#92;mathrm{Po}(27)" class="latex" /></p>
+<p>Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+27+%3E+10%2C+%7EV+%5Csim+%5Cmathrm%7BN%7D%2827%2C+27%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 27 &gt; 10, ~V &#92;sim &#92;mathrm{N}(27, 27)" title="&#92;lambda = 27 &gt; 10, ~V &#92;sim &#92;mathrm{N}(27, 27)" class="latex" /> approximately </p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow+W+-+V+%5Csim+%5Cmathrm%7BN%7D%28-9%2C45%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow W - V &#92;sim &#92;mathrm{N}(-9,45)" title="&#92;Rightarrow W - V &#92;sim &#92;mathrm{N}(-9,45)" class="latex" /> approximately</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28W+-V+%5Cge+-11%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(W -V &#92;ge -11)" title="&#92;mathrm{P}(W -V &#92;ge -11)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+%5Cmathrm%7BP%7D%28W-V+%3E+-11.5%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= &#92;mathrm{P}(W-V &gt; -11.5)" title="= &#92;mathrm{P}(W-V &gt; -11.5)" class="latex" /> by continuity correction</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Capprox+0.645&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;approx 0.645" title="&#92;approx 0.645" class="latex" /></p>
+<p>(iv)<br />
+The average number of people joining the queue per minute may not remain constant throughout a period of long hours as they have different traveling time. There might be no flight departing too. Thus, it would not appropriate. </p>
+<h3>KS Comments:</h3>
+<p>The question is pretty standard Poisson. So long as students are careful with continuity correction, I don&#8217;t see much problems with this questions. They should answer (iv) contextually.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1684" class="post-1684 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-approximation tag-binomial-distribution tag-h2-mathematics tag-mf15 tag-normal-distribution tag-statistics tag-suggested-solution tag-year-2011">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Oct</span><span class="hs-day">5</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-7-suggested-solutions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-7-suggested-solutions/" rel="bookmark">2011 A-level H2 Mathematics (9740) Paper 2 Question 7 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Firstly, the number of different friends is a fixed constant.<br />
+Secondly, the probability of successfully contacting a friend is constant.</p>
+<p>(ii)<br />
+The probability of contacting a friend will vary from friend to friend, as some friend might not be free or contactable during that evening.</p>
+<p>(iii)<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BR%7D+%5Csim+%5Cmathrm%7BB%7D%288%2C0.7%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{R} &#92;sim &#92;mathrm{B}(8,0.7)" title="&#92;mathrm{R} &#92;sim &#92;mathrm{B}(8,0.7)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28R+%5Cge+6%29+%3D+1+-+%5Cmathrm%7BP%7D%28R+%5Cle+5%29+%5Capprox+0.552&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(R &#92;ge 6) = 1 - &#92;mathrm{P}(R &#92;le 5) &#92;approx 0.552" title="&#92;mathrm{P}(R &#92;ge 6) = 1 - &#92;mathrm{P}(R &#92;le 5) &#92;approx 0.552" class="latex" /></p>
+<p>(iv)<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BR%7D+%5Csim+%5Cmathrm%7BB%7D%2840%2C+0.7%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{R} &#92;sim &#92;mathrm{B}(40, 0.7)" title="&#92;mathrm{R} &#92;sim &#92;mathrm{B}(40, 0.7)" class="latex" /></p>
+<p>Since <img src="//s0.wp.com/latex.php?latex=n+%3D+40+%5Cmathrm%7B%7Eis%7Elarge%2C%7E%7D+np+%3D+28+%3E+5+%5Cmathrm%7B%7Eand%7E%7D+nq+%3D+12+%3E+5+%7E+%5Cmathrm%7BR%7D+%5Csim+%5Cmathrm%7BN%7D%2828%2C+8.4%29+%5Cmathrm%7Bapproximately%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n = 40 &#92;mathrm{~is~large,~} np = 28 &gt; 5 &#92;mathrm{~and~} nq = 12 &gt; 5 ~ &#92;mathrm{R} &#92;sim &#92;mathrm{N}(28, 8.4) &#92;mathrm{approximately}" title="n = 40 &#92;mathrm{~is~large,~} np = 28 &gt; 5 &#92;mathrm{~and~} nq = 12 &gt; 5 ~ &#92;mathrm{R} &#92;sim &#92;mathrm{N}(28, 8.4) &#92;mathrm{approximately}" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28R+%5Ctextless+25%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(R &#92;textless 25) " title="&#92;mathrm{P}(R &#92;textless 25) " class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+%5Cmathrm%7BP%7D%28R+%5Ctextless+24.5%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= &#92;mathrm{P}(R &#92;textless 24.5)" title="= &#92;mathrm{P}(R &#92;textless 24.5)" class="latex" /> by continuity correction</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Capprox+0.114&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;approx 0.114" title="&#92;approx 0.114" class="latex" /></p>
+<h3>KS Comments:</h3>
+<p>Students should be careful to write all assumptions in the context of question. I cannot stress the importance of this. Conditions for Binomial Approximation have to be well stated and explained. Lastly, remember to do continuity correction.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1680" class="post-1680 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-graphing-calculator tag-h2-mathematics tag-mf15 tag-normal-distribution tag-statistics tag-suggested-solution tag-year-2011">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Oct</span><span class="hs-day">5</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-5-suggested-solutions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/10/2011-a-level-h2-mathematics-9740-paper-2-question-5-suggested-solutions/" rel="bookmark">2011 A-level H2 Mathematics (9740) Paper 2 Question 5 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p><img src="//s0.wp.com/latex.php?latex=X+%5Csim+%5Cmathrm%7BN%7D%28%5Cmu%2C+%5Csigma%5E2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X &#92;sim &#92;mathrm{N}(&#92;mu, &#92;sigma^2)" title="X &#92;sim &#92;mathrm{N}(&#92;mu, &#92;sigma^2)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X+%5Ctextless+40.0%29+%3D+0.05&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X &#92;textless 40.0) = 0.05" title="&#92;mathrm{P}(X &#92;textless 40.0) = 0.05" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow+%5Cfrac%7B40+-+%5Cmu%7D%7B%5Csigma%7D+%3D+-1.6449+%5Crightarrow+%281%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow &#92;frac{40 - &#92;mu}{&#92;sigma} = -1.6449 &#92;rightarrow (1)" title="&#92;Rightarrow &#92;frac{40 - &#92;mu}{&#92;sigma} = -1.6449 &#92;rightarrow (1)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X+%5Ctextless+70.0%29+%3D+0.05&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X &#92;textless 70.0) = 0.05" title="&#92;mathrm{P}(X &#92;textless 70.0) = 0.05" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5CRightarrow+%5Cfrac%7B70+-+%5Cmu%7D%7B%5Csigma%7D+%3D+1.9600+%5Crightarrow+%281%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Rightarrow &#92;frac{70 - &#92;mu}{&#92;sigma} = 1.9600 &#92;rightarrow (1)" title="&#92;Rightarrow &#92;frac{70 - &#92;mu}{&#92;sigma} = 1.9600 &#92;rightarrow (1)" class="latex" /></p>
+<p>Solving, <img src="//s0.wp.com/latex.php?latex=%5Cmu+%3D+53.7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu = 53.7" title="&#92;mu = 53.7" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=%5Csigma+%3D+8.32&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sigma = 8.32" title="&#92;sigma = 8.32" class="latex" /></p>
+<h3>KS Comments:</h3>
+<p>A very straightforward question here, as it didn&#8217;t even try to trick unsuspecting students who often forget to change the signs before applying inverse norm function. Please use a Graphing Calculator to solve if you aren&#8217;t good with simultaneous equations.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1655" class="post-1655 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-levels tag-h2-mathematics tag-normal-distribution tag-statistics">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Sep</span><span class="hs-day">21</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/09/using-symmetrical-properties-of-normal-curve-to-solve-questions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/09/using-symmetrical-properties-of-normal-curve-to-solve-questions/" rel="bookmark">Using symmetrical properties of Normal Curve to solve questions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>Consider if we are simply given that <img src="//s0.wp.com/latex.php?latex=X+%7E%5Csim%7E+N%28%5Cmu_0%2C+%5Csigma%5E2%29+and+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X ~&#92;sim~ N(&#92;mu_0, &#92;sigma^2) and " title="X ~&#92;sim~ N(&#92;mu_0, &#92;sigma^2) and " class="latex" />latex \mathrm{P}(X &lt; 4.2) = 0.2$ and <img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X+%3E+8%29+%3D+0.1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X &gt; 8) = 0.1" title="&#92;mathrm{P}(X &gt; 8) = 0.1" class="latex" />. We will be able to solve this question comfortably by standardising the two given probability equations and then finding the z-value, etc.</p>
+<p>However, what if the question throw in more unknowns? Like <img src="//s0.wp.com/latex.php?latex=%5Calpha+%5Cmathrm%7BP%7D%28X+%3C+%5Cmu_0+-+%5Calpha%29+%3D+%5Cmathrm%7BP%7D%28X+%3C+%5Cmu_0+%2B+%5Calpha%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;alpha &#92;mathrm{P}(X &lt; &#92;mu_0 - &#92;alpha) = &#92;mathrm{P}(X &lt; &#92;mu_0 + &#92;alpha)" title="&#92;alpha &#92;mathrm{P}(X &lt; &#92;mu_0 - &#92;alpha) = &#92;mathrm{P}(X &lt; &#92;mu_0 + &#92;alpha)" class="latex" />. In this case we cannot really doing our usual approach of doing standardising and inverse normal since we lack the area.</p>
+<figure id="attachment_1656" style="width: 1280px" class="wp-caption alignnone"><a href="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png"><img data-attachment-id="1656" data-permalink="https://theculture.sg/2015/09/using-symmetrical-properties-of-normal-curve-to-solve-questions/normal-distribution-curve/" data-orig-file="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?fit=1280%2C587&amp;ssl=1" data-orig-size="1280,587" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Normal Distribution Curve" data-image-description="" data-medium-file="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?fit=300%2C138&amp;ssl=1" data-large-file="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?fit=640%2C294&amp;ssl=1" class="wp-image-1656 size-full" src="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?resize=640%2C294" alt="Normal Distribution Curve" srcset="https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?w=1280&amp;ssl=1 1280w, https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?resize=300%2C138&amp;ssl=1 300w, https://i2.wp.com/theculture.sg/wp-content/uploads/2015/09/Normal-Distribution-Curve.png?resize=1024%2C470&amp;ssl=1 1024w" sizes="(max-width: 640px) 100vw, 640px" data-recalc-dims="1" /></a><figcaption class="wp-caption-text">Normal Distribution Curve</figcaption></figure>
+<p>Considering the symmetrical properties of the graph above, we can derive some results.</p>
+<p>Many students tend to confuse and think that normal distribution is always centred about zero, this is inaccurate as only the standard normal distribution is centred about zero. In general, we can say that normal distribution is always centred about its mean, <img src="//s0.wp.com/latex.php?latex=%5Cmu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mu" title="&#92;mu" class="latex" />. And it so happens that the mean of the standard normal distribution is zero.</p>
+<p>Students may want to reference a <a href="http://theculture.sg/2015/07/normal-distribution-question-1/">2014 ACJC Prelim Question here</a> to see if they can do it.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1765" class="post-1765 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-approximation tag-mf15 tag-normal-distribution tag-paper-2 tag-poisson-distribution tag-statistics tag-suggested-solution">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Sep</span><span class="hs-day">2</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/09/2013-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions-2/#respond">No <span>Comments</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/09/2013-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions-2/" rel="bookmark">2013 A-level H2 Mathematics (9740) Paper 2 Question 12 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Conditions:<br />
+1. The mean number of absentees per unit time is constant.<br />
+2. The probability of an employee being absent is independent of another employee being absent.</p>
+<p>Reasons why condition might not be met<br />
+1. The mean number of absentees may be higher during an epidemic.<br />
+2. If an employee is ill, his illness may be contagious and will increase the probability of other employees becoming ill.</p>
+<p>(ii)<br />
+Let X denote the number of absentees from Admin Department on n days.<br />
+<img src="//s0.wp.com/latex.php?latex=X+%5Csim+%5Cmathrm%7BPo%7D%281.2n%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X &#92;sim &#92;mathrm{Po}(1.2n)" title="X &#92;sim &#92;mathrm{Po}(1.2n)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X%3D0%29+%5Ctextless+0.01+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X=0) &#92;textless 0.01 " title="&#92;mathrm{P}(X=0) &#92;textless 0.01 " class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=e%5E%7B-1.2n%7D+%5Ctextless+0.01+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-1.2n} &#92;textless 0.01 " title="e^{-1.2n} &#92;textless 0.01 " class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=n+%3E+3.8&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n &gt; 3.8" title="n &gt; 3.8" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Ctherefore%2C+%5Cmathrm%7Bsmallest%7Enumber%7Eof%7Edays%7D%3D4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;therefore, &#92;mathrm{smallest~number~of~days}=4" title="&#92;therefore, &#92;mathrm{smallest~number~of~days}=4" class="latex" /></p>
+<p>(iii)<br />
+Let Y denote the number of days of absence from the 2 departments in 5 days.<br />
+<img src="//s0.wp.com/latex.php?latex=Y+%5Csim+%5Cmathrm%7BPo%7D%2819.5%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y &#92;sim &#92;mathrm{Po}(19.5)" title="Y &#92;sim &#92;mathrm{Po}(19.5)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28Y+%3E20%29%3D1-%5Cmathrm%7BP%7D%28Y+%5Cle+20%29+%3D+0.397&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(Y &gt;20)=1-&#92;mathrm{P}(Y &#92;le 20) = 0.397" title="&#92;mathrm{P}(Y &gt;20)=1-&#92;mathrm{P}(Y &#92;le 20) = 0.397" class="latex" /></p>
+<p>(iv)<br />
+Let W denote the number of days of absence from the 2 departments in 60 days.</p>
+<p><img src="//s0.wp.com/latex.php?latex=W+%5Csim+%5Cmathrm%7BPo%7D%28234%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="W &#92;sim &#92;mathrm{Po}(234)" title="W &#92;sim &#92;mathrm{Po}(234)" class="latex" /></p>
+<p>Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+234+%3E+10%2C+%7E+W+%5Csim+%5Cmathrm%7BN%7D%28234%2C+234%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 234 &gt; 10, ~ W &#92;sim &#92;mathrm{N}(234, 234)" title="&#92;lambda = 234 &gt; 10, ~ W &#92;sim &#92;mathrm{N}(234, 234)" class="latex" /> approximately.</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28200+%5Cle+W+%5Cle+250%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(200 &#92;le W &#92;le 250)" title="&#92;mathrm{P}(200 &#92;le W &#92;le 250)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+%5Cmathrm%7BP%7D%28199.5+%5Cle+W+%5Cle+250.5%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= &#92;mathrm{P}(199.5 &#92;le W &#92;le 250.5)" title="= &#92;mathrm{P}(199.5 &#92;le W &#92;le 250.5)" class="latex" /> by continuity correction</p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+0.848&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 0.848" title="= 0.848" class="latex" /></p>
+<h3>KS Comments:</h3>
+<p>Students need to take note that question must be answered in the context of the question. Most A-levels questions mandate this, so students should not just simply memorise the textbook answers. Some students do not realised that the <img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X%3Dx%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X=x)" title="&#92;mathrm{P}(X=x)" class="latex" /> formula for a poisson distribution is given in MF15 and could use it. Alternatively, students could have used the GC and draw the table in their answers. Lastly, do remember to apply continuity correction whenever necessary.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-1390" class="post-1390 post type-post status-publish format-standard hentry category-jc-mathematics tag-a-level tag-approximation tag-h2-mathematics tag-mf15 tag-normal-distribution tag-poisson-distribution tag-statistics tag-suggested-solution tag-year-2012">
+		<div class="entry-meta hs-post-info">
+		<span class="entry-date published updated"><span class="hs-month">Aug</span><span class="hs-day">14</span><span class="hs-year">2015</span></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://theculture.sg/author/kahseng/">KS Teng</a></span></span><a href="https://theculture.sg/2015/08/2012-a-level-h2-mathematics-9740-paper-2-question-10-suggested-solutions/#comments">1 <span>Comment</span></a>	</div><!-- .entry-meta -->
+	
+
+	<div class="hs-post-wrapper">
+
+		
+		<header class="entry-header">
+			<h3 class="entry-title"><a href="https://theculture.sg/2015/08/2012-a-level-h2-mathematics-9740-paper-2-question-10-suggested-solutions/" rel="bookmark">2012 A-level H2 Mathematics (9740) Paper 2 Question 10 Suggested Solutions</a></h3>		</header><!-- .entry-header -->
+
+		<div class="entry-categories">
+			<i class="fa fa-bookmark"></i><a href="https://theculture.sg/category/mathematics/jc-mathematics/" rel="category tag">JC Mathematics</a>		</div>
+		
+		<div class="entry-content">
+			<p>All solutions here are SUGGESTED. Mr. Teng will hold no liability for any errors. Comments are entirely personal opinions.</p>
+<p>(i)<br />
+Firstly, gold coins are scattered randomly in a randomly chosen region of <img src="//s0.wp.com/latex.php?latex=1m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1m^2" title="1m^2" class="latex" />.<br />
+Secondly, the mean number of gold coins found in any randomly chosen region of <img src="//s0.wp.com/latex.php?latex=1m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1m^2" title="1m^2" class="latex" /> is constant.<br />
+Lastly, the finding of a gold coin in a randomly chosen region of area <img src="//s0.wp.com/latex.php?latex=1m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1m^2" title="1m^2" class="latex" /> is independent of the finding of another gold coins.</p>
+<p>(ii)<br />
+Let X denote the number of gold coins in a region of <img src="//s0.wp.com/latex.php?latex=1m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1m^2" title="1m^2" class="latex" />.<br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D%28X+%5Cge+3%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P}(X &#92;ge 3)" title="&#92;mathrm{P}(X &#92;ge 3)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+1+-+%5Cmathrm%7BP%7D%28X+%5Cle+2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 1 - &#92;mathrm{P}(X &#92;le 2)" title="= 1 - &#92;mathrm{P}(X &#92;le 2)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%3D+0.0474&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 0.0474" title="= 0.0474" class="latex" /></p>
+<p>(iii)<br />
+Let Y denote the number of gold coins found in a region of <img src="//s0.wp.com/latex.php?latex=x%7Em%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x~m^2" title="x~m^2" class="latex" />.<br />
+<img src="//s0.wp.com/latex.php?latex=Y+%7E%5Csim%7E+%5Cmathrm%7BPo%7D+%280.8x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y ~&#92;sim~ &#92;mathrm{Po} (0.8x)" title="Y ~&#92;sim~ &#92;mathrm{Po} (0.8x)" class="latex" /></p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28Y+%3D+1%29+%3D+0.2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (Y = 1) = 0.2" title="&#92;mathrm{P} (Y = 1) = 0.2" class="latex" /></p>
+<p>Using the Graphing Calculator, <img src="//s0.wp.com/latex.php?latex=x+%3D+0.324&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x = 0.324" title="x = 0.324" class="latex" /></p>
+<p>(iv)<br />
+Let W denote the number of gold coins found in a region of <img src="//s0.wp.com/latex.php?latex=100m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="100m^2" title="100m^2" class="latex" /><br />
+<img src="//s0.wp.com/latex.php?latex=W+%7E%5Csim%7E+%5Cmathrm%7BPo%7D+%2880%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="W ~&#92;sim~ &#92;mathrm{Po} (80)" title="W ~&#92;sim~ &#92;mathrm{Po} (80)" class="latex" /></p>
+<p>Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+80+%3E+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 80 &gt; 10" title="&#92;lambda = 80 &gt; 10" class="latex" />, <img src="//s0.wp.com/latex.php?latex=W+%7E%5Csim%7E+%5Cmathrm%7BN%7D+%2880%2C+80%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="W ~&#92;sim~ &#92;mathrm{N} (80, 80)" title="W ~&#92;sim~ &#92;mathrm{N} (80, 80)" class="latex" /> approximately</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28W+%5Cge+90%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (W &#92;ge 90) " title="&#92;mathrm{P} (W &#92;ge 90) " class="latex" /><br />
+<img src="//s0.wp.com/latex.php?latex=%3D+%5Cmathrm%7BP%7D+%28W+%5Cge+89.5%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= &#92;mathrm{P} (W &#92;ge 89.5) " title="= &#92;mathrm{P} (W &#92;ge 89.5) " class="latex" /> by continuity correction<br />
+<img src="//s0.wp.com/latex.php?latex=%5Capprox+0.144&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;approx 0.144" title="&#92;approx 0.144" class="latex" /> </p>
+<p>(v)<br />
+Let C and S denote the number of gold coins and pottery shards in in a region of <img src="//s0.wp.com/latex.php?latex=50m%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="50m^2" title="50m^2" class="latex" /> respectively.</p>
+<p><img src="//s0.wp.com/latex.php?latex=C+%7E%5Csim%7E+%5Cmathrm%7BPo%7D+%2840%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="C ~&#92;sim~ &#92;mathrm{Po} (40)" title="C ~&#92;sim~ &#92;mathrm{Po} (40)" class="latex" /><br />
+Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+40+%3E+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 40 &gt; 10" title="&#92;lambda = 40 &gt; 10" class="latex" />, <img src="//s0.wp.com/latex.php?latex=C+%7E%5Csim%7E+%5Cmathrm%7BN%7D+%2840%2C+40%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="C ~&#92;sim~ &#92;mathrm{N} (40, 40)" title="C ~&#92;sim~ &#92;mathrm{N} (40, 40)" class="latex" /> approximately.<br />
+<img src="//s0.wp.com/latex.php?latex=S+%7E%5Csim%7E+%5Cmathrm%7BPo%7D+%28150%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S ~&#92;sim~ &#92;mathrm{Po} (150)" title="S ~&#92;sim~ &#92;mathrm{Po} (150)" class="latex" /><br />
+Since <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D+150+%3E+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = 150 &gt; 10" title="&#92;lambda = 150 &gt; 10" class="latex" />, <img src="//s0.wp.com/latex.php?latex=S+%7E%5Csim%7E+%5Cmathrm%7BN%7D+%28150%2C+150%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S ~&#92;sim~ &#92;mathrm{N} (150, 150)" title="S ~&#92;sim~ &#92;mathrm{N} (150, 150)" class="latex" /> approximately.</p>
+<p><img src="//s0.wp.com/latex.php?latex=C+%2B+S+%7E%5Csim%7E+%5Cmathrm%7BN%7D+%28190%2C+190%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="C + S ~&#92;sim~ &#92;mathrm{N} (190, 190)" title="C + S ~&#92;sim~ &#92;mathrm{N} (190, 190)" class="latex" /> approximately</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28C+%2B+S+%5Cge+200%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (C + S &#92;ge 200) " title="&#92;mathrm{P} (C + S &#92;ge 200) " class="latex" /><br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28C+%2B+S+%5Cge+199.5%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (C + S &#92;ge 199.5) " title="&#92;mathrm{P} (C + S &#92;ge 199.5) " class="latex" /><br />
+<img src="//s0.wp.com/latex.php?latex=%5Capprox+0.245&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;approx 0.245" title="&#92;approx 0.245" class="latex" /></p>
+<p>(vi)<br />
+<img src="//s0.wp.com/latex.php?latex=S+%2B+3C+%7E%5Csim%7E+%5Cmathrm%7BN%7D+%2830%2C+510%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S + 3C ~&#92;sim~ &#92;mathrm{N} (30, 510)" title="S + 3C ~&#92;sim~ &#92;mathrm{N} (30, 510)" class="latex" /> approximately</p>
+<p><img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28S+%2B+3C+%5Cge+0%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (S + 3C &#92;ge 0)" title="&#92;mathrm{P} (S + 3C &#92;ge 0)" class="latex" /><br />
+<img src="//s0.wp.com/latex.php?latex=%5Cmathrm%7BP%7D+%28S+%2B+3C+%5Cge+-.05%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathrm{P} (S + 3C &#92;ge -.05)" title="&#92;mathrm{P} (S + 3C &#92;ge -.05)" class="latex" /> by continuity correction<br />
+<img src="//s0.wp.com/latex.php?latex=%5Capprox+0.912++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;approx 0.912  " title="&#92;approx 0.912  " class="latex" /></p>
+<h3>KS Comments:</h3>
+<p>For (iii), students can also introduce the poisson formula from MF15 and solve by hand. Please rm. to apply continuity correction for (iv). I took awhile to understand (vi) too. :/ Students should read carefully if their english is as bad as mine. For (vi), students should note that it is necessary that they approximate to normal before consider the difference of the distributions. Be reminded that we cannot take the difference of poisson distributions.</p>
+
+					</div><!-- .entry-content -->
+	</div>
+</article><!-- #post-## -->
+
+			
+			
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='https://theculture.sg/tag/normal-distribution/page/2/'>2</a>
+<a class="next page-numbers" href="https://theculture.sg/tag/normal-distribution/page/2/">Next</a></div>
+	</nav>
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area">
+		<aside id="nav_menu-5" class="widget widget_nav_menu"><h4 class="widget-title">Quick Links</h4><div class="menu-nav-container"><ul id="menu-nav" class="menu"><li id="menu-item-4278" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4278"><a href="https://theculture.sg/2016/09/2016-alevel-suggested-solutions/">2016 A&#8217;level Suggested Solutions</a></li>
+<li id="menu-item-2911" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2911"><a href="https://theculture.sg/2015/07/a-level-h2-mathematics-9740-suggested-solutions/">A-level H2 Mathematics (9740) Suggested Solutions</a></li>
+<li id="menu-item-4942" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4942"><a href="https://theculture.sg/category/studying-tips/">Studying Tips</a></li>
+<li id="menu-item-3545" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3545"><a href="https://theculture.sg/2016/05/list-of-great-math-articles/">List of Great and Helpful Math Articles</a></li>
+<li id="menu-item-3371" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3371"><a href="https://theculture.sg/2016/04/list-of-great-gp-articles/">List of Great and Helpful GP Articles</a></li>
+<li id="menu-item-5003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5003"><a href="https://theculture.sg/resources/">Resources</a></li>
+</ul></div></aside><aside id="categories-2" class="widget widget_categories"><h4 class="widget-title">Categories</h4>		<ul>
+	<li class="cat-item cat-item-676"><a href="https://theculture.sg/category/chemistry/" title="Sparking some Chemistry with you">Chemistry</a>
+</li>
+	<li class="cat-item cat-item-285"><a href="https://theculture.sg/category/chemistry/jc-chemistry/" title="All things Chemistry and JC.">JC Chemistry</a>
+</li>
+	<li class="cat-item cat-item-100"><a href="https://theculture.sg/category/general-paper/" title="All things General Paper and JC">JC General Paper</a>
+</li>
+	<li class="cat-item cat-item-196"><a href="https://theculture.sg/category/mathematics/jc-mathematics/" title="All things Mathematics and JC">JC Mathematics</a>
+</li>
+	<li class="cat-item cat-item-286"><a href="https://theculture.sg/category/jc-physics/" title="All things Phyiscs and JC">JC Physics</a>
+</li>
+	<li class="cat-item cat-item-674"><a href="https://theculture.sg/category/mathematics/" title="All things Math-y">Mathematics</a>
+</li>
+	<li class="cat-item cat-item-323"><a href="https://theculture.sg/category/chemistry/secondary-chemistry/" title="All things Chemistry and Secondary">Secondary Chemistry</a>
+</li>
+	<li class="cat-item cat-item-197"><a href="https://theculture.sg/category/mathematics/secondary-mathematics/" title="All things Mathematics and Secondary">Secondary Math</a>
+</li>
+	<li class="cat-item cat-item-675"><a href="https://theculture.sg/category/studying-tips/" title="All things you need to hustle">Studying Tips</a>
+</li>
+	<li class="cat-item cat-item-198"><a href="https://theculture.sg/category/mathematics/university-mathematics/" title="All things Mathematics and University">University Mathematics</a>
+</li>
+		</ul>
+</aside><aside id="tag_cloud-4" class="widget widget_tag_cloud"><h4 class="widget-title">Tags</h4><div class="tagcloud"><a href='https://theculture.sg/tag/2016/' class='tag-link-400 tag-link-position-1' title='36 topics' style='font-size: 10.582524271845pt;'>2016</a>
+<a href='https://theculture.sg/tag/8807/' class='tag-link-408 tag-link-position-2' title='62 topics' style='font-size: 13.708737864078pt;'>8807</a>
+<a href='https://theculture.sg/tag/9740/' class='tag-link-373 tag-link-position-3' title='125 topics' style='font-size: 17.78640776699pt;'>9740</a>
+<a href='https://theculture.sg/tag/9758/' class='tag-link-375 tag-link-position-4' title='68 topics' style='font-size: 14.252427184466pt;'>9758</a>
+<a href='https://theculture.sg/tag/9759/' class='tag-link-451 tag-link-position-5' title='33 topics' style='font-size: 10.038834951456pt;'>9759</a>
+<a href='https://theculture.sg/tag/alevels/' class='tag-link-280 tag-link-position-6' title='101 topics' style='font-size: 16.563106796117pt;'>A&#039;levels</a>
+<a href='https://theculture.sg/tag/a-level/' class='tag-link-7 tag-link-position-7' title='218 topics' style='font-size: 21.04854368932pt;'>A-level</a>
+<a href='https://theculture.sg/tag/a-levels/' class='tag-link-219 tag-link-position-8' title='79 topics' style='font-size: 15.067961165049pt;'>A-levels</a>
+<a href='https://theculture.sg/tag/answers/' class='tag-link-268 tag-link-position-9' title='51 topics' style='font-size: 12.621359223301pt;'>Answers</a>
+<a href='https://theculture.sg/tag/complex-number/' class='tag-link-32 tag-link-position-10' title='23 topics' style='font-size: 8pt;'>Complex Number</a>
+<a href='https://theculture.sg/tag/definite-integral/' class='tag-link-142 tag-link-position-11' title='25 topics' style='font-size: 8.4077669902913pt;'>Definite Integral</a>
+<a href='https://theculture.sg/tag/differentiation/' class='tag-link-27 tag-link-position-12' title='41 topics' style='font-size: 11.26213592233pt;'>Differentiation</a>
+<a href='https://theculture.sg/tag/essay-analysis/' class='tag-link-409 tag-link-position-13' title='25 topics' style='font-size: 8.4077669902913pt;'>essay analysis</a>
+<a href='https://theculture.sg/tag/essay-outlines/' class='tag-link-271 tag-link-position-14' title='40 topics' style='font-size: 11.126213592233pt;'>essay outlines</a>
+<a href='https://theculture.sg/tag/functions/' class='tag-link-106 tag-link-position-15' title='25 topics' style='font-size: 8.4077669902913pt;'>Functions</a>
+<a href='https://theculture.sg/tag/general-paper/' class='tag-link-254 tag-link-position-16' title='31 topics' style='font-size: 9.7669902912621pt;'>general paper</a>
+<a href='https://theculture.sg/tag/graphing-calculator/' class='tag-link-111 tag-link-position-17' title='25 topics' style='font-size: 8.4077669902913pt;'>Graphing Calculator</a>
+<a href='https://theculture.sg/tag/h1-general-paper/' class='tag-link-170 tag-link-position-18' title='25 topics' style='font-size: 8.4077669902913pt;'>h1 general paper</a>
+<a href='https://theculture.sg/tag/h1-mathematics/' class='tag-link-4 tag-link-position-19' title='41 topics' style='font-size: 11.26213592233pt;'>H1 Mathematics</a>
+<a href='https://theculture.sg/tag/h1generalpaper/' class='tag-link-498 tag-link-position-20' title='30 topics' style='font-size: 9.495145631068pt;'>h1generalpaper</a>
+<a href='https://theculture.sg/tag/h1general-paper/' class='tag-link-206 tag-link-position-21' title='46 topics' style='font-size: 11.941747572816pt;'>h1general paper</a>
+<a href='https://theculture.sg/tag/h2-mathematics/' class='tag-link-5 tag-link-position-22' title='259 topics' style='font-size: 22pt;'>H2 Mathematics</a>
+<a href='https://theculture.sg/tag/help/' class='tag-link-395 tag-link-position-23' title='35 topics' style='font-size: 10.446601941748pt;'>Help</a>
+<a href='https://theculture.sg/tag/how-to/' class='tag-link-15 tag-link-position-24' title='56 topics' style='font-size: 13.165048543689pt;'>How To</a>
+<a href='https://theculture.sg/tag/integration/' class='tag-link-28 tag-link-position-25' title='65 topics' style='font-size: 13.980582524272pt;'>Integration</a>
+<a href='https://theculture.sg/tag/mathematics/' class='tag-link-218 tag-link-position-26' title='43 topics' style='font-size: 11.533980582524pt;'>Mathematics</a>
+<a href='https://theculture.sg/tag/mf15/' class='tag-link-6 tag-link-position-27' title='111 topics' style='font-size: 17.106796116505pt;'>MF15</a>
+<a href='https://theculture.sg/tag/mf26/' class='tag-link-384 tag-link-position-28' title='47 topics' style='font-size: 12.077669902913pt;'>MF26</a>
+<a href='https://theculture.sg/tag/opinion/' class='tag-link-8 tag-link-position-29' title='49 topics' style='font-size: 12.349514563107pt;'>Opinion</a>
+<a href='https://theculture.sg/tag/paper-1/' class='tag-link-109 tag-link-position-30' title='55 topics' style='font-size: 13.029126213592pt;'>Paper 1</a>
+<a href='https://theculture.sg/tag/paper-2/' class='tag-link-116 tag-link-position-31' title='61 topics' style='font-size: 13.572815533981pt;'>Paper 2</a>
+<a href='https://theculture.sg/tag/probability/' class='tag-link-31 tag-link-position-32' title='34 topics' style='font-size: 10.174757281553pt;'>Probability</a>
+<a href='https://theculture.sg/tag/pure-mathematics/' class='tag-link-2 tag-link-position-33' title='133 topics' style='font-size: 18.194174757282pt;'>Pure Mathematics</a>
+<a href='https://theculture.sg/tag/question/' class='tag-link-9 tag-link-position-34' title='26 topics' style='font-size: 8.6796116504854pt;'>Question</a>
+<a href='https://theculture.sg/tag/questions/' class='tag-link-278 tag-link-position-35' title='26 topics' style='font-size: 8.6796116504854pt;'>Questions</a>
+<a href='https://theculture.sg/tag/statistics/' class='tag-link-3 tag-link-position-36' title='121 topics' style='font-size: 17.650485436893pt;'>Statistics</a>
+<a href='https://theculture.sg/tag/suggested-solution/' class='tag-link-99 tag-link-position-37' title='148 topics' style='font-size: 18.73786407767pt;'>Suggested Solution</a>
+<a href='https://theculture.sg/tag/suggested-solutions/' class='tag-link-275 tag-link-position-38' title='57 topics' style='font-size: 13.165048543689pt;'>Suggested Solutions</a>
+<a href='https://theculture.sg/tag/tips/' class='tag-link-10 tag-link-position-39' title='35 topics' style='font-size: 10.446601941748pt;'>Tips</a>
+<a href='https://theculture.sg/tag/tuition/' class='tag-link-70 tag-link-position-40' title='23 topics' style='font-size: 8pt;'>Tuition</a>
+<a href='https://theculture.sg/tag/year-2010/' class='tag-link-158 tag-link-position-41' title='24 topics' style='font-size: 8.2718446601942pt;'>Year 2010</a>
+<a href='https://theculture.sg/tag/year-2011/' class='tag-link-159 tag-link-position-42' title='24 topics' style='font-size: 8.2718446601942pt;'>Year 2011</a>
+<a href='https://theculture.sg/tag/year-2013/' class='tag-link-138 tag-link-position-43' title='39 topics' style='font-size: 10.990291262136pt;'>Year 2013</a>
+<a href='https://theculture.sg/tag/year-2014/' class='tag-link-108 tag-link-position-44' title='36 topics' style='font-size: 10.582524271845pt;'>Year 2014</a>
+<a href='https://theculture.sg/tag/year-2015/' class='tag-link-267 tag-link-position-45' title='32 topics' style='font-size: 9.9029126213592pt;'>Year 2015</a></div>
+</aside><aside id="blog_subscription-3" class="widget jetpack_subscription_widget"><h4 class="widget-title">Subscribe to Blog via Email</h4>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-3">
+				<div id="subscribe-text"><p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+</div><p>Join 51 other subscribers</p>
+					<p id="subscribe-email">
+						<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3">
+							Email Address						</label>
+						<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address" />
+					</p>
+
+					<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="https://theculture.sg/tag/normal-distribution/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-3" />
+												<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+					</p>
+							</form>
+
+			<script>
+			/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// In case the placeholder functionality is available we remove labels
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.querySelector( 'label[for=subscribe-field-blog_subscription-3]' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-3'),
+					input = d.getElementById('subscribe-field-blog_subscription-3'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );
+			</script>
+				
+</aside>	</div><!-- #secondary -->
+	
+</div>
+
+
+	</div><!-- #content -->
+
+	<footer id="hs-colophon" class="hs-site-footer">
+		
+		<div id="hs-bottom-footer">
+			<div class="hs-container">
+				<div class="hs-copy-right">	
+					copyright 2017 THE CULTURE SG				</div>
+					
+				<div class="hs-site-info">
+					WordPress Theme					<span class="sep"> | </span>
+					<a href="https://hashthemes.com/wordpress-theme/hashone/" target="_blank">Hashone</a> by Hash Themes				</div><!-- #site-info -->
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div id="hs-back-top" class="animated hs-hide"><i class="fa fa-angle-up"></i></div>
+			<script type="text/javascript">function showhide_toggle(a,b,d,f){var e=jQuery("#"+a+"-link-"+b),c=jQuery("a",e),g=jQuery("#"+a+"-content-"+b);a=jQuery("#"+a+"-toggle-"+b);e.toggleClass("sh-show sh-hide");g.toggleClass("sh-show sh-hide").toggle();"true"===c.attr("aria-expanded")?c.attr("aria-expanded","false"):c.attr("aria-expanded","true");a.text()===d?a.text(f):a.text(d)};</script>
+		<div style="display:none">
+	</div>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201716'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/theculture.sg\/wp-admin\/admin-ajax.php","nonce":"7393e3ff96","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/theculture.sg\/wp-login.php?redirect_to=https%3A%2F%2Ftheculture.sg%2F2016%2F03%2F2015-a-level-h2-mathematics-9740-paper-2-question-12-suggested-solutions%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js?ver=20170209'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2017Apraa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.3'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/jquery.bxslider.js?ver=4.1.2'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/owl.carousel.js?ver=1.3.3'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/isotope.pkgd.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/nivo-lightbox.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/jquery.stellar.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/wow.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/odometer.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/waypoint.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/jquery.nav.js?ver=20161003'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/SmoothScroll.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-content/themes/hashone/js/hashone-custom.js?ver=20150903'></script>
+<script type='text/javascript' src='https://theculture.sg/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201716.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.8.2',blog:'95111135',post:'0',tz:'8',srv:'theculture.sg'} ]);
+	_stq.push([ 'clickTrackerInit', '95111135', '0' ]);
+</script>
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.456 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-04-17 22:37:35 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->
