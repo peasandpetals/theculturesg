@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wp-content/wppa-pl
+RewriteRule ^What-the-Students-say-about-Us/(.*) /wp-content/uploads/wppa-source/album-3/$1 [NC]
+RewriteRule ^What-the-Students-say-about-KS/(.*) /wp-content/uploads/wppa-source/album-1/$1 [NC]
+RewriteRule ^What-the-Students-say-about-Casey/(.*) /wp-content/uploads/wppa-source/album-2/$1 [NC]
+</IfModule>
